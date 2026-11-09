@@ -103,10 +103,10 @@ Outcomes: `ok`, `false_start`, `anticipation`, `timeout`, `catch_pass`, `catch_f
 
 | Version | Changes |
 |---|---|
-| v1 | Original recruitment game: display, button, LED, buzzer, EEPROM best score. |
-| v2 | Gameplay refinements; contains the 10 ms bug. |
+| v1 | Original recruitment game: display, button, LED, buzzer. No saved best score and no reset. (Code lost.) |
+| v2 | Added a best score saved to EEPROM so it survives power cycles, but no way to reset it. Contains the 10 ms bug. |
 | v3 | Minor bug fixes (not kept). |
-| v4 | Anti-cheat fix (see above). |
+| v4 | Anti-cheat fix (see above). Added the hold-at-power-on reset for the best score. |
 | v5 | Experiment features: visual/audio/both modes, catch trials, CSV logging, button mode switching. I tested and debugged it on hardware, including the display polarity and wiring problems. |
 | v5.1 | I rewrote the catch-trial logic with its own release flag, then traced the state machine and found the release gate can't trigger, because `ARMED` already treats any press as a false start. Kept as defensive code. |
 
@@ -114,7 +114,7 @@ Outcomes: `ok`, `false_start`, `anticipation`, `timeout`, `catch_pass`, `catch_f
 
 - `firmware/v5.1/`: current version
 - `firmware/v4/`: anti-cheat fix, normal game only
-- `firmware/v2/`: original version with the 10 ms bug, kept for comparison
+- `firmware/v2/`: earliest surviving version, with the 10 ms bug, kept for comparison
 - `firmware/display_test/`: one-segment-at-a-time wiring test
 - `data/`: experiment results (participant IDs only, no names)
 - `analysis/`: spreadsheet and charts
