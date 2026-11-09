@@ -15,7 +15,8 @@ An Arduino Mega reaction-time game I built as a recruitment demo for the Arroyo 
 |---|---|
 | Segments a–g, dp | 22–29 |
 | Digits 1–4 (left → right) | 30–33 |
-| Button | 2 (`INPUT_PULLUP`) |
+| Button | 2 (`INPUT_PULLUP`) |[reaction_time_tester_README.md](https://github.com/user-attachments/files/34564768/reaction_time_tester_README.md)
+
 | LED | 3 |
 | Buzzer | 4 |
 
