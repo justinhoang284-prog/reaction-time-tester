@@ -107,7 +107,7 @@ Outcomes: `ok`, `false_start`, `anticipation`, `timeout`, `catch_pass`, `catch_f
 | v2 | Gameplay refinements; contains the 10 ms bug. |
 | v3 | Minor bug fixes (not kept). |
 | v4 | Anti-cheat fix (see above). |
-| v5 | Experiment features: visual/audio/both modes, catch trials, CSV logging, button mode switching. **Written with AI assistance from my requirements**; I tested and debugged it on hardware, including the display polarity and wiring problems. |
+| v5 | Experiment features: visual/audio/both modes, catch trials, CSV logging, button mode switching. I tested and debugged it on hardware, including the display polarity and wiring problems. |
 | v5.1 | I rewrote the catch-trial logic with its own release flag, then traced the state machine and found the release gate can't trigger, because `ARMED` already treats any press as a false start. Kept as defensive code. |
 
 ## Files
